@@ -180,13 +180,103 @@
         font-size: 1.1em;
         color: #fff;
     }
+	
+	/* EXTRA SLIDE */
+	
+	.slideshow1{
+  margin: 0 auto;
+  padding-top: 50px;
+  height: 700px;
+  perspective: 1000px;
+}
+.content{
+  margin: auto;
+  width: 150px;
+  perspective: 1000px;
+  position:relative;
+  padding-top: 80px;
+  transform-style: preserve-3d;
+}
+.slider-content{
+  width: 100%;
+  position:absolute;
+  float:right;
+  animation: rotate 15s infinite linear;
+  transform-style: preserve-3d;
+}
+.slider-content:hover{
+  cursor: pointer;
+  animation-play-state: paused;
+}
 
+.slider-content figure{
+  width:180px;
+  height:120px;
+  border:1px solid #555;
+  overflow:hidden;
+  position:absolute;
+}
+.slider-content figure:nth-child(1){
+  transform:rotateY(0deg) translateZ(300px);
+}
+
+.slider-content figure:nth-child(2){
+  transform:rotateY(40deg) translateZ(300px);
+}
+.slider-content figure:nth-child(3){
+  transform:rotateY(80deg) translateZ(300px);
+}
+.slider-content figure:nth-child(4){
+  transform:rotateY(120deg) translateZ(300px);
+}
+.slider-content figure:nth-child(5){
+  transform:rotateY(160deg) translateZ(300px);
+}
+.slider-content figure:nth-child(6){
+  transform:rotateY(200deg) translateZ(300px);
+}
+.slider-content figure:nth-child(7){
+  transform:rotateY(240deg) translateZ(300px);
+}
+.slider-content figure:nth-child(8){
+  transform:rotateY(280deg) translateZ(300px);
+}
+.slider-content figure:nth-child(9){
+  transform:rotateY(320deg) translateZ(300px);
+}
+
+.shadow{
+  position: absolute;
+  box-shadow: 0px 0px 0px #000;
+ 
+}
+.slider-content img{
+  image-rendering: auto;
+  transition: all 300ms;
+  width: 100%;
+  height: 100%;
+}
+.slider-content img:hover{
+  transform: scale(1.2);
+  transition: all 300ms;
+ 
+}
+
+@keyframes rotate {
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+      transform: rotateY(360deg);
+  }
+}
+	
 </style>
 </head>
 <body>
     <!-- Intro Section -->
     <section class="intro" id="intro">
-        <h1>💖 Happy Birthday My Love, My Life, Wifey Puja 💖</h1>
+        <h1 style="color: #F5276C;">💖 Happy Birthday My Love, My Life, Wifey Puja 💖</h1>
         <p>Tap below to begin your surprise journey 🎁</p>
         <button id="startBtn">Start the Magic ✨</button>
         <audio id="bgMusic" loop>
@@ -196,11 +286,11 @@
 
     <!-- Reveal Section -->
     <section class="reveal" id="reveal">
-        <h2>🎀 My Sweetest Puja 🎀</h2>
+        <h2 style="color: #F5276C;">🎀 My Sweetest Life Partner 🎀</h2>
         <div class="message">
-            <p>From the moment you came into my life, everything became brighter, warmer, and more beautiful.  
+            <p style="color: #B027F5;">From the moment you came into my life, everything became brighter, warmer, and more beautiful.  
             You are my dream come true, my forever favorite person.  
-            Today, I just want to say — you are my world. 💕</p>
+            Today, I just want to say — you are my whole world. 💕</p>
         </div>
     </section>
 
@@ -213,7 +303,7 @@
                     <h3>Click to Open 💖</h3>
                 </div>
                 <div class="card-back">
-                    <p>My beloved Puja,<br><br>
+                    <p style="color: #F5276C;">My beloved Puja,<br><br>
                     You are my sunshine, my laughter, my peace.  
                     Thank you for filling every day with love and magic.  
                     I’m so lucky to call you mine. 💞<br><br>
@@ -222,8 +312,9 @@
             </div>
         </div>
     </section>
-
-    <!-- Slideshow Section -->
+	
+	<!-- Slideshow Section -->
+ 
     <section>
         <h2>📸 Our Memories Together 💞</h2>
         <div class="slideshow">
@@ -232,12 +323,31 @@
             <img src="photo3.jpeg">
         </div>
     </section>
-
+	
+	<!-- NEW Slideshow Section -->
+	
+	<section class="slideshow1">
+					<div class="content">
+						<div class="slider-content">
+						   <figure class="shadow"> <img src="photo1.jpeg"></figure>
+						   <figure class="shadow"> <img src="photo2.jpeg"></figure>
+						   <figure class="shadow"> <img src="photo3.jpeg"></figure>
+						   <figure class="shadow"> <img src="photo1.jpeg"></figure>
+						   <figure class="shadow"> <img src="photo2.jpeg"></figure>
+						   <figure class="shadow"> <img src="photo3.jpeg"></figure>
+						   <figure class="shadow"> <img src="photo1.jpeg"></figure>
+						   <figure class="shadow"> <img src="photo2.jpeg"></figure>
+						   <figure class="shadow"> <img src="photo3.jpeg"></figure>
+						</div>
+					</div>
+				</section>
+	
+	
     <!-- Closing Section -->
     <section>
         <h2>🎂 Happy Birthday My Queen 👑</h2>
         <div class="message">
-            <p>I love you endlessly, Puja.  
+            <p style="color: #F5276C;">I love you endlessly, Baban 💖.  
             May your birthday be filled with love, laughter, and unforgettable moments.  
             You deserve the entire universe. 💫</p>
         </div>
